@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Contact Form</title>
+    <link rel="stylesheet" href="contact.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+           
+            <h1>Hospital Contact Form</h1>
+        </header>
+        <p>Please fill out the form below to get in touch with us.</p>
+        <form action="/submit-contact-form" method="post">
+            <label for="reason">Reason for Contacting <span class="required">*</span></label>
+            <select id="reason" name="reason" required>
+                <option value="" disabled selected>Select Reason</option>
+                <option value="general-inquiry">General Inquiry</option>
+                <option value="appointment">Appointment</option>
+                <option value="feedback">Feedback</option>
+                <option value="complaint">Complaint</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="first-name">First Name <span class="required">*</span></label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name <span class="required">*</span></label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="### ### ####" required>
+
+            <label for="email">Email <span class="required"></span></label>
+            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+
+            <label for="message">Message <span class="required">*</span></label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <div class="g-recaptcha" data-sitekey="your-site-key"></div>
+
+            <button type="submit">Submit</button>
+            <a href="index.html" class="back-button">Back to Home</a>
+        </form>
+    </div>
+</body>
+</html>

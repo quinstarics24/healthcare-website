@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Registration Form</title>
+    <link rel="stylesheet" href="Register.css">
+</head>
+<body>
+    <div class="container">
+        
+        <h1>Hospital Registration Form</h1>
+        <p>Patients are required to register their information on this form.</p>
+        <form>
+            <label for="chart-number">Chart Number</label>
+            <input type="text" id="chart-number" name="chart-number" required>
+
+            <label for="registration-check-id">Registration Check ID</label>
+            <input type="text" id="registration-check-id" name="registration-check-id" required>
+
+            <label for="registration-location">Registration Location ex: ER, Clinic, etc</label>
+            <input type="text" id="registration-location" name="registration-location" required>
+
+            <label for="registration-date">Registration Date <span class="required">*</span></label>
+            <input type="date" id="registration-date" name="registration-date" required>
+
+            <label for="registration-time">Registration Time <span class="required">*</span></label>
+            <input type="time" id="registration-time" name="registration-time" required>
+
+            <label for="health-care-number">Health Care Number <span class="required"></span></label>
+            <input type="text" id="health-care-number" name="health-care-number" required>
+
+            <label for="first-name">Patient Name <span class="required">*</span></label>
+            <div class="name-group">
+                <input type="text" id="first-name" name="first-name" placeholder="First" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last" required>
+            </div>
+
+            <label for="address">Address <span class="required">*</span></label>
+            <input type="text" id="street-address" name="street-address" placeholder="Street Address" required>
+
+            <div class="address-group">
+                <input type="text" id="city" name="city" placeholder="City" required>
+                <input type="text" id="region" name="region" placeholder="Region" required>
+            </div>
+            <div class="address-group">
+                <select id="country" name="country" required>
+                    <option value="" disabled selected>Select Country</option>
+                  
+                    <option value="US">Cameroon</option>
+                    <option value="CA">Canada</option>
+                    <option value="UK">United Kingdom</option>
+            
+                </select>
+            </div>
+
+            <label for="phone-home">Phone Number - Home <span class="required">*</span></label>
+            <input type="tel" id="phone-home" name="phone-home" placeholder="### ### ####" required>
+
+            <label for="phone-work">Phone Number - Work (optional)</label>
+            <input type="tel" id="phone-work" name="phone-work" placeholder="### ### ####">
+
+            <label for="email">Email (optional)</label>
+            <input type="email" id="email" name="email" placeholder="email@example.com">
+
+            <label for="sex">Sex <span class="required">*</span></label>
+            <select id="sex" name="sex" required>
+                <option value="" disabled selected>Select Sex</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="date-of-birth">Date of Birth <span class="required">*</span></label>
+            <input type="date" id="date-of-birth" name="date-of-birth" required>
+
+            
+            <button type="submit">Submit</button>
+            <button type="button" onclick="location.href='index.html'">Go Back to Home</button>
+        </form>
+    </div>
+</body>
+</html>
