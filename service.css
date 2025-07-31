@@ -205,15 +205,15 @@ footer {
 .footer-contact ul {
     list-style: none;
     padding: 0;
-    margin-top: 10px; /* Adjust the spacing between the heading and list */
+    margin-top: 10px; 
 }
 
 .footer-contact ul {
-    margin-top: 0; /* Removes any extra margin */
+    margin-top: 0; 
 }
 
 .footer-contact ul li {
-    margin-bottom: 10px; /* Adjusts the spacing between list items */
+    margin-bottom: 10px; 
 }
 
 .footer-links ul li,
